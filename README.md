@@ -1,4 +1,4 @@
-# jquery-smooth-scroll
+# jquery-smooth-scroll-to-section
 
 ## #1
 ```
