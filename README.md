@@ -32,7 +32,7 @@ jQuery('a[href*=#]:not([href=#])').on('click', function (event) {
         jQuery('html,body').animate({ scrollTop: element.offset().top },'normal', 'swing');
     });
 ```    
-## #5
+## #5 (Best)
 ```
   jQuery('a[href*=#]:not([href=#])').on('click', function (event) {
         event.preventDefault();
