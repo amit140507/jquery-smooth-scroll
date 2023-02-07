@@ -32,3 +32,11 @@ jQuery('a[href*=#]:not([href=#])').on('click', function (event) {
         jQuery('html,body').animate({ scrollTop: element.offset().top },'normal', 'swing');
     });
 ```    
+## #5
+```
+  jQuery('a[href*=#]:not([href=#])').on('click', function (event) {
+        event.preventDefault();
+        var element = jQuery(this.hash);
+        jQuery('html,body').animate({ scrollTop: element.offset().top - 200},);
+    });
+```    
