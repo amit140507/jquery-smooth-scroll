@@ -32,11 +32,20 @@ jQuery('a[href*=#]:not([href=#])').on('click', function (event) {
         jQuery('html,body').animate({ scrollTop: element.offset().top },'normal', 'swing');
     });
 ```    
-## #5 (Best)
+## #5 
 ```
   jQuery('a[href*=#]:not([href=#])').on('click', function (event) {
         event.preventDefault();
         var element = jQuery(this.hash);
         jQuery('html,body').animate({ scrollTop: element.offset().top - 200},);
+    });
+```    
+## #6 (Best)
+```
+jQuery('a[href*=#]:not([href=#])').on('click', function (event) {
+        event.preventDefault();
+        var element = jQuery(this.hash);
+          var headerheight  =jQuery("header").outerHeight(true);
+        jQuery('html,body').animate({ scrollTop: element.offset().top - headerheight},);
     });
 ```    
